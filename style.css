@@ -1,0 +1,166 @@
+@import url('http://fonts.cdnfonts.com/css/itc-benguiat-std');
+
+:root {
+    --color1: hsla(0, 62%, 7%, .65);
+    --color2: hsla(0, 100%, 50%, .65);
+    --color3: hsla(345, 100%, 40%, .65);
+    --color4: hsla(320, 100%, 30%, .65);
+    --color5: hsla(280, 100%, 30%, .65);
+    --color6: hsla(255, 100%, 40%, .65);
+    --color7: hsla(240, 100%, 50%, .65);
+    --color8: hsla(0, 62%, 7%, .65);
+}
+
+body {
+    color: #1e0707;     
+    background: linear-gradient(to right, var(--color1), var(--color2), var(--color3), var(--color4), var(--color5), var(--color6), var(--color7), var(--color8)),
+        url('./sky.jpeg') no-repeat center center / cover;                                       
+}
+
+
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.btn-container {
+    margin-bottom: 30px;
+}
+
+
+
+#grid-container {
+    display: grid;
+    background-color: white;
+    height: 560px;
+    width: 560px;
+    margin-bottom: 45px;
+} 
+
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #ff1515;
+}
+
+.btn {
+    font-family: 'ITC Benguiat Std', sans-serif;
+    background-color: white;
+    color: #ff1515;
+    width: 100%;
+    height: 10%;
+    padding: 4px 0 0 0;
+    border: solid 1px #ff1515;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 10px 1px #ff1515;
+    margin-bottom: 15px;
+    transition-duration: 200ms;
+    transition-property: transform;
+}
+
+.btn:hover {
+    background-color: #1e0707;
+    transform: scale(1.2, 1.2);
+}
+
+
+.color-size-container {
+    display: flex;
+}
+
+.slide-container {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px 1px #ff1515;
+    margin-right: 20px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ff1515;
+    border-radius: 50%;
+}
+
+
+.color-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ff1515;
+}
+
+#color-picker {
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    margin-top: 7px;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+#color-picker:hover {
+    transform: scale(1, 2.1);
+}
+
+#color-picker::-webkit-color-swatch {
+    border-radius: 10px;
+    border: none;
+}
+
+#color-picker::-moz-color-swatch {
+    border-radius: 10px;
+    border: none;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+a {
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+a:hover {
+    transform: rotate(360deg);
+}
+
+#github {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+    background-image: url('./GitHub-Mark-32px.png');
+}
+
+
+
+
+
+
+
+
+
